@@ -29,16 +29,18 @@
         <h4>Welcome to My Portfolio</h4>
         <h1>Hi, I'm Anselmo Martins</h1>
         <h3>Full Stack Developer</h3>
-        <a href="Assets/Docs/CV.pdf" download><button class="btn">Download CV</button></a>
-        <a href="projects.html"><button class="btn">View Projects</button></a>
-        <a href="#contact"><button class="btn">Contact Me</button></a>
+        <div class="hero-actions">
+            <a href="Assets/Docs/CV.pdf" download><button class="btn">Download CV</button></a>
+            <a href="projects.html"><button class="btn">View Projects</button></a>
+            <a href="#contact"><button class="btn">Contact Me</button></a>
+        </div>
     </section>
 
     <section id="about">
         <h2>About Me</h2>
-        <P>👨‍💻 Who am I: Computer Science student</P>
-        <P>🛠️ What I can do: frontend, backend, applications, databases</P>
-        <p>🚀 Where I'm going: Becoming a <strong>better software engineer</strong> and building meaningful solutions</p>
+        <P> 👨‍💻<strong>Who I am:</strong> Computer Science student</P>
+        <P>🛠️ <strong>What I can do:</strong> frontend, backend, applications, databases</P>
+        <p>🚀 <strong>Where I'm going:</strong> Becoming a <strong>better software engineer</strong> and building meaningful solutions</p>
         <br>
         <p>I’m passionate about technology, AI, design, creativity, and innovation. As a Computer Science student, I enjoy building practical digital solutions that solve real-world problems. I’m continuously learning and improving my skills in software development, while exploring new technologies and ideas.</p>
         <br>
@@ -46,9 +48,11 @@
     </section>
 
     </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <div id="Technical Skills">
+    
+    <section id="skill">
+        <h2 id="skillheader">Skills</h2>
+        <div id="skills">
+        <div id="Technical Skills" class="skillbox">
             <h2>Technical Skills</h2>
             <ul>
                 <li><i class="ri-java-fill"></i></li>
@@ -57,13 +61,13 @@
                 <li><i class="ri-html5-fill"></i></li>
                 <li><i class="ri-css3-fill"></i></li>
                 <li><i class="ri-javascript-line"></i></li>
-                <li>python</li>
+                <li>Python</li>
                 <li>Kotlin</li>
                 <li>System Design & Architecture</li>
                 <li>Data Structures</li>
             </ul>
         </div>
-        <div id="Frameworks & Libraries">
+        <div id="Frameworks & Libraries" class="skillbox">
             <h2>Frameworks & Libraries</h2>
             <ul>
                 <li>Node.js</li>
@@ -73,7 +77,7 @@
                 <li>Jetpack Compose</li>
             </ul>
         </div>
-        <div id="DevOps and Tools">
+        <div id="DevOps and Tools" class="skillbox">
             <h2>DevOps & Tools</h2>
             <ul>
                 <li>Git & GitHub</li>
@@ -85,7 +89,7 @@
                 <li>Debugging and Testing</li>
             </ul>
         </div>
-        <div id="Soft Skills">
+        <div id="Soft Skills" class="skillbox">
             <h2>Soft Skills</h2>
             <ul>
                 <li>Communication</li>
@@ -99,7 +103,7 @@
                 <li>Critical Thinking</li>
             </ul>
         </div>
-        <div id="Software Tools">
+        <div id="Software Tools" class="skillbox">
             <h2>Software Tools</h2>
             <ul>
                 <li>Visual Studio</li>
@@ -112,6 +116,7 @@
                 <li>Microsoft Office</li>
                 <li>PhotoScape</li>
             </ul>
+        </div>
         </div>
     </section>
 
