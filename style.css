@@ -578,30 +578,34 @@ section {
     display: flex;
     width: max-content;
     gap: 18px;
-    animation: scrollPanels 20s linear infinite;
+    animation: scrollPanels 28s linear infinite;
 }
 
 .carousel-box {
-    flex: 0 0 310px;
+    flex: 0 0 340px;
     background: rgba(12, 17, 23, 0.78);
     border: 1px solid rgba(143, 175, 255, 0.18);
     border-radius: 20px;
-    padding: 18px 16px;
+    padding: 20px 18px 18px;
     box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
-    min-height: 170px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
 }
 
 .carousel-box h3 {
-    margin: 0 0 12px;
-    font-size: 1.2rem;
+    margin: 0 0 14px;
+    font-size: 1.5rem;
+    text-align: center;
     color: #edf3ff;
 }
 
 .carousel-items {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    align-content: flex-start;
     gap: 10px;
-    overflow: hidden;
+    flex: 1;
 }
 
 .carousel-items span {
@@ -621,10 +625,24 @@ section {
     color: #92b7ff;
 }
 
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #f0f0f0;
+    font-size: 0.9rem;
+    font-weight: 700px;
+    border: 1px solid #659AFD;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(61, 126, 200, 0.9), rgba(10, 15, 20, 0.82));
+    backdrop-filter: blur(10px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.4s ease, transform 0.3s ease;
+
+}
+
 @keyframes scrollPanels {
     0% { transform: translateX(0); }
-    50% { transform: translateX(-50%); }
-    100% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
 
 @media (max-width: 900px) {
@@ -728,6 +746,3 @@ section {
         padding: 12px 14px;
     }
 }
-
-
-
