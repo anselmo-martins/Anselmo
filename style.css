@@ -218,9 +218,11 @@ section {
 }
 
 #about h2 {
-    font-size: clamp(2rem, 4vw, 2.7rem);
+    width: 100%;
+    font-size: 2.6rem;
     margin-bottom: 24px;
-    color: #f3f5f7;
+    color: #f2f6ff;
+    text-align: center;
 }
 
 #about p {
@@ -290,11 +292,11 @@ section {
     color: #6ea4ff;
 }
 
-#skill h2{
-    font-size: 2rem;
+#skill h2 {
+    font-size: 2.6rem;
     margin-bottom: 24px;
-    color: #f3f5f7;
-    align-items: center;
+    color: #f2f6ff;
+    text-align: center;
 }
 
 .skillbox li:hover {
@@ -308,7 +310,11 @@ section {
     padding: 80px 20px 100px;
 }
 
-#projects h2, #skillheader, #BCHeader{
+#projects h2,
+#skillheader,
+#BCHeader,
+#about h2,
+#contact h2 {
     margin: 0 0 28px;
     font-size: 2.6rem;
     letter-spacing: -0.05em;
@@ -366,6 +372,33 @@ section {
     display: inline-block;
     margin-top: 18px;
     font-size: 1.6rem;
+    color: #8eb8ff;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-top: 18px;
+    border: none;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    transition: transform 0.2s ease, opacity 0.2s ease, filter 0.2s ease;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    transform: translateY(-2px);
+    opacity: 1;
+    filter: drop-shadow(0 0 14px rgba(87, 128, 255, 0.38));
+}
+
+.project-link i {
+    margin-top: 0;
+    font-size: 2rem;
     color: #8eb8ff;
 }
 
